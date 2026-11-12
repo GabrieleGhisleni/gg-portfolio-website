@@ -2,7 +2,7 @@
 
 Personal portfolio — React 18 + Vite + Tailwind v4, deployed as a SPA on GitHub Pages.
 
-Live: [gabrieleghisleni.github.io/gg-portfolio-website](https://gabrieleghisleni.github.io/gg-portfolio-website/)
+Live: [gabrieleghisleni.dev](https://gabrieleghisleni.dev/)
 
 ---
 
@@ -10,7 +10,7 @@ Live: [gabrieleghisleni.github.io/gg-portfolio-website](https://gabrieleghisleni
 
 ```bash
 npm install
-npm run dev        # http://localhost:5173/gg-portfolio-website/
+npm run dev        # http://localhost:5173/
 ```
 
 ```bash
@@ -30,7 +30,7 @@ npm run deploy
     │
     ├─ predeploy → npm run build
     │               Vite bundles src/ into dist/
-    │               Base path: /gg-portfolio-website/ (set in vite.config.js)
+    │               Base path: / (set in vite.config.js)
     │
     └─ gh-pages -d dist
                     Pushes the contents of dist/ to the
@@ -64,5 +64,5 @@ src/
   test/           Vitest tests (*.test.jsx)
   index.css       Tailwind @theme tokens
 public/
-  assets/images/  Static images (served at /gg-portfolio-website/assets/…)
+  assets/images/  Static images (served at /assets/…)
 ```
